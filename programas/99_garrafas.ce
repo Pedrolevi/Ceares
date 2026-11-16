@@ -1,0 +1,25 @@
+EI MACHO, PRESTA ATENÇÃO!
+
+EI MACHO garrafas É UM CABRA ESTRIBADO COM 99
+
+ARRUDIE ENQUANTO garrafas > 0 :
+    SE garrafas > 1 :
+        GAITAR garrafas, "garrafas de cerveja no muro,", garrafas, "garrafas de cerveja."
+        TRISCAR EM garrafas COM 1
+        SE garrafas > 1 :
+            GAITAR "Pega uma e passa ao redor,", garrafas, "garrafas de cerveja no muro."
+        AÍ DENTO :
+            GAITAR "Pega uma e passa ao redor, 1 garrafa de cerveja no muro."
+        VÔTE
+    AÍ DENTO :
+        GAITAR "1 garrafa de cerveja no muro, 1 garrafa de cerveja."
+        TRISCAR EM garrafas COM 1
+        GAITAR "Pega uma e passa ao redor, nenhuma garrafa de cerveja no muro."
+    VÔTE
+    GAITAR ""
+ACABOU O ARRODEIO
+
+GAITAR "Nenhuma garrafa de cerveja no muro, nenhuma garrafa de cerveja."
+GAITAR "Vá na bodega, compre mais uma ruma e acunhe tudo de novo!"
+
+SÓ O MIOLO DA PIPOCA!

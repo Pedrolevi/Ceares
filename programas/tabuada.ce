@@ -8,10 +8,10 @@ GAITAR "=== TABUADA DO CABRA DA PESTE (TABUADA DO 7) ==="
 ARRUDIE ENQUANTO i <= 10 :
     EI MACHO res É UM CABRA ESTRIBADO COM numero VEZES i
     GAITAR numero, " x ", i, " = ", res
-    DAR O GRAU EM i COM 1
+    BOTAR PRA MOER i COM 1
 ACABOU O ARRODEIO
 
 GAITAR "Tabuada calculada nos trincas!"
 
-SÓ O MIOLO DA PIPOCA!
+CABÔ-SE O QUE ERA DOCE!
 

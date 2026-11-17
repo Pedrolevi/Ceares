@@ -3,7 +3,7 @@ import sys, os, re, argparse
 def traduzir_expressao(expr):
     partes = re.split(r'("[^"]*"|\'[^\']*\')', expr)
     subst = [
-        (r'\bARRETADO\b', 'True'), (r'\bPAIA\b', 'False'),
+        (r'\bARRETADO\b', 'True'), (r'\bARIADO\b', 'False'),
         (r'\bMAIS\b', '+'), (r'\bMENOS\b', '-'), (r'\bVEZES\b', '*'),
         (r'\bIGUAL A\b', '=='), (r'\bDIFERENTE DE\b', '!='),
         (r'\bMAIOR OU IGUAL A\b', '>='), (r'\bMENOR OU IGUAL A\b', '<='),
@@ -33,7 +33,7 @@ def traduzir(codigo_fonte):
                 iniciou = True
                 continue
             raise SyntaxError(f"Linha {num}: Deve iniciar com 'EI MACHO, PRESTA ATENÇÃO!'")
-        if re.match(r'^S[OÓ]\s+O\s+MIOLO\s+DA\s+PIPOCA\s*!?$', linha, re.IGNORECASE):
+        if re.match(r'^CAB[OÔ]-SE\s+O\s+QUE\s+ERA\s+DOCE\s*!?$', linha, re.IGNORECASE):
             finalizou = True
             break
 
@@ -44,7 +44,7 @@ def traduzir(codigo_fonte):
             continue
         m = re.match(r'^EI\s+MACHO\s+([a-zA-Z_]\w*)\s+[EÉ]\s+UM\s+CABRA\s+([a-zA-Z_]\w*)$', linha, re.IGNORECASE)
         if m:
-            v_pad = '""' if m.group(2).upper() == "GASGUITA" else "0"
+            v_pad = '""' if m.group(2).upper() == "GASGUITO" else "0"
             codigo_py.append("    " * indent + f"{m.group(1)} = {v_pad}")
             continue
         m = re.match(r'^BOTE\s+(.+)\s+NO\s+QUENGO\s+DE\s+([a-zA-Z_]\w*)$', linha, re.IGNORECASE)
@@ -53,15 +53,15 @@ def traduzir(codigo_fonte):
             continue
 
         # Operações Aritméticas
-        m = re.match(r'^DAR\s+O\s+GRAU\s+EM\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
+        m = re.match(r'^BOTAR\s+PRA\s+MOER\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
         if m:
             codigo_py.append("    " * indent + f"{m.group(1)} += {traduzir_expressao(m.group(2))}")
             continue
-        m = re.match(r'^TRISCAR\s+EM\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
+        m = re.match(r'^RANCAR\s+EM\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
         if m:
             codigo_py.append("    " * indent + f"{m.group(1)} -= {traduzir_expressao(m.group(2))}")
             continue
-        m = re.match(r'^BOTAR\s+PRA\s+MOER\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
+        m = re.match(r'^ESTRIBAR\s+([a-zA-Z_]\w*)\s+COM\s+(.+)$', linha, re.IGNORECASE)
         if m:
             codigo_py.append("    " * indent + f"{m.group(1)} *= {traduzir_expressao(m.group(2))}")
             continue
@@ -100,7 +100,7 @@ def traduzir(codigo_fonte):
         raise SyntaxError(f"Linha {num}: Comando não reconhecido: '{linha}'")
 
     if not iniciou: raise SyntaxError("Faltou o cabeçalho 'EI MACHO, PRESTA ATENÇÃO!'")
-    if not finalizou: raise SyntaxError("Faltou o encerramento 'SÓ O MIOLO DA PIPOCA!'")
+    if not finalizou: raise SyntaxError("Faltou o encerramento 'CABÔ-SE O QUE ERA DOCE!'")
     return "\n".join(codigo_py) + "\n"
 
 def main():

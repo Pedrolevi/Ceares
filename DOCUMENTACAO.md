@@ -10,12 +10,11 @@
 ## 1. Visão Geral
 A **LingCeara** é uma linguagem esotérica inspirada nas expressões típicas do Ceará. 
 
-Para não ser apenas uma tradução direta do inglês:
-- O programa começa com `EI MACHO, PRESTA ATENÇÃO!` e finaliza com `SÓ O MIOLO DA PIPOCA!`.
+- O programa começa com `EI MACHO, PRESTA ATENÇÃO!` e finaliza com `CABÔ-SE O QUE ERA DOCE!`.
 - Atribuições de variáveis são feitas "no quengo" (cabeça).
 - O laço de repetição é o **Arrodeio** (`ARRUDIE ENQUANTO ... :`).
 - O bloco condicional usa `AÍ DENTO :` para o ramo alternativo (*else*) e fecha com `VÔTE`.
-- As operações aritméticas usam gírias cearenses (`DAR O GRAU EM`, `TRISCAR EM`, `BOTAR PRA MOER`).
+- As operações aritméticas usam gírias cearenses (`BOTAR PRA MOER`, `RANCAR EM`, `ESTRIBAR`).
 
 ---
 
@@ -24,8 +23,8 @@ Para não ser apenas uma tradução direta do inglês:
 | Tipo LingCeara | Tipo Python | Significado no Cearês | Exemplo |
 | :--- | :--- | :--- | :--- |
 | **`ESTRIBADO`** | `int` | Pessoa cheia do dinheiro (inteiro) | `99`, `7` |
-| **`GASGUITA`** | `str` | Voz fina e estridente (texto) | `"Hello World!"` |
-| **`BUIÉ`** | `bool` | Café com leite / brincadeira | `ARRETADO` (True), `PAIA` (False) |
+| **`GASGUITO`** | `str` | Voz fina e estridente (texto) | `"Hello World!"` |
+| **`CISMADO`** | `bool` | Desconfiado / em dúvida | `ARRETADO` (True), `ARIADO` (False) |
 
 ---
 
@@ -42,9 +41,9 @@ Comentários são considerados fuxicos (fofocas) e são ignorados pelo tradutor:
 - `BOTE <expressao> NO QUENGO DE <var>`
 
 ### 3.3. Operações Aritméticas e Expressões
-- **Soma:** `DAR O GRAU EM <var> COM <valor>`
-- **Subtração:** `TRISCAR EM <var> COM <valor>`
-- **Multiplicação:** `BOTAR PRA MOER <var> COM <valor>`
+- **Soma:** `BOTAR PRA MOER <var> COM <valor>`
+- **Subtração:** `RANCAR EM <var> COM <valor>`
+- **Multiplicação:** `ESTRIBAR <var> COM <valor>`
 - **Operadores em expressões:** `MAIS` (`+`), `MENOS` (`-`), `VEZES` (`*`), `IGUAL A` (`==`), `DIFERENTE DE` (`!=`), `MAIOR QUE` (`>`), `MENOR QUE` (`<`), `MAIOR OU IGUAL A` (`>=`), `MENOR OU IGUAL A` (`<=`).
 
 ### 3.4. Saída de Dados
@@ -64,10 +63,10 @@ Comentários são considerados fuxicos (fofocas) e são ignorados pelo tradutor:
 - **Aí dento!:** Desaforo/negação (ramo else).
 - **Vôte:** Espanto (fim de if).
 - **Gaitar:** Falar alto (print).
-- **Triscar:** Tocar de leve, tirar (subtração).
-- **Dar o grau:** Ajustar, somar (adição).
-- **Botar pra moer:** Acelerar (multiplicação).
-- **Só o miolo da pipoca:** A melhor coisa do mundo (fim de execução).
+- **Rancar:** Arrancar, tirar (subtração).
+- **Botar pra moer:** Aumentar, somar (adição).
+- **Estribar:** Multiplicar, ficar estribado (multiplicação).
+- **Cabô-se o que era doce:** Acabou-se o que era bom / chegou ao fim (fim de execução).
 
 ---
 

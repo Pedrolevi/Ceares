@@ -3,9 +3,13 @@
 Linguagem esotérica baseada no [Dicionário Cearês da ABIH-CE](https://www.abih-ce.com.br/dicionario-ceares).
 
 ## 👥 Integrantes da Equipe
-- Nome: [Nome do Aluno 1] - Matrícula: [Matrícula]
-- Nome: [Nome do Aluno 2] - Matrícula: [Matrícula]
-- Nome: [Nome do Aluno 3] - Matrícula: [Matrícula]
+- Nome: PEDRO LEVI MOURA XIMENES - Matrícula: 592812
+- Nome: KLAVIA MIRANDA RODRIGUES - Matrícula: 592814
+- Nome: JAMESSON ALBERTO TOME FERREIRA - Matrícula: 596028
+- Nome: GUSTAVO MENESES XAVIER ABREU CARDOSO - Matrícula: 596031
+- Nome: THALISIA PEREIRA OLIVEIRA - Matrícula: 558447
+- Nome: LAYNY VITORIA CARLOS DE MORAIS - Matrícula: 558448
+
 
 ## Arquivos do Projeto 1
 - `tradutor.py`: Tradutor de código `.ce` para Python `.py`.

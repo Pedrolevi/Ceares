@@ -22,6 +22,9 @@ Linguagem esotérica baseada no [Dicionário Cearês da ABIH-CE](https://www.abi
 - `exemplos_gerados/`: Arquivos Python gerados após a tradução.
 
 ## Como Executar
+
+> **Nota (Linux/macOS):** Caso o comando `python` não exista no seu sistema operacional, substitua `python` por `python3` nos comandos abaixo (ex.: `python3 testar.py` ou `python3 tradutor.py ...`).
+
 ```bash
 # Testar todos os 3 programas de uma vez:
 python testar.py

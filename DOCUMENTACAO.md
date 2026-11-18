@@ -72,6 +72,8 @@ Comentários são considerados fuxicos (fofocas) e são ignorados pelo tradutor:
 
 ## 5. Como Executar os Programas do Projeto 1
 
+> **Nota (Linux/macOS):** Caso o comando `python` não exista no seu sistema operacional, substitua `python` por `python3` nos comandos abaixo (ex.: `python3 tradutor.py ...` ou `python3 testar.py`).
+
 ```bash
 # 1. Hello World
 python tradutor.py programas/ola_mundo.ce --run

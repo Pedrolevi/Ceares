@@ -1,4 +1,4 @@
-# Documentação da Linguagem LingCeara — Projeto 1
+# Documentação da Linguagem Cearês — Projeto 1
 
 **Referência das gírias:** [Dicionário Cearês da ABIH-CE](https://www.abih-ce.com.br/dicionario-ceares)  
 **Extensão dos arquivos:** `.ce`  
@@ -8,7 +8,7 @@
 ---
 
 ## 1. Visão Geral
-A **LingCeara** é uma linguagem esotérica inspirada nas expressões típicas do Ceará. 
+O **Cearês** é uma linguagem esotérica inspirada nas expressões típicas do Ceará. 
 
 - O programa começa com `EI MACHO, PRESTA ATENÇÃO!` e finaliza com `CABÔ-SE O QUE ERA DOCE!`.
 - Atribuições de variáveis são feitas "no quengo" (cabeça).
@@ -20,7 +20,7 @@ A **LingCeara** é uma linguagem esotérica inspirada nas expressões típicas d
 
 ## 2. Tipos de Dados Suportados
 
-| Tipo LingCeara | Tipo Python | Significado no Cearês | Exemplo |
+| Tipo Cearês | Tipo Python | Significado no Cearês | Exemplo |
 | :--- | :--- | :--- | :--- |
 | **`ESTRIBADO`** | `int` | Pessoa cheia do dinheiro (inteiro) | `99`, `7` |
 | **`GASGUITO`** | `str` | Voz fina e estridente (texto) | `"Hello World!"` |

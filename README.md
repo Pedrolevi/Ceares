@@ -1,4 +1,4 @@
-# LingCeara — Projeto 1
+# Cearês — Projeto 1
 
 Linguagem esotérica baseada no [Dicionário Cearês da ABIH-CE](https://www.abih-ce.com.br/dicionario-ceares).
 

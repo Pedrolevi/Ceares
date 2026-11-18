@@ -104,7 +104,7 @@ def traduzir(codigo_fonte):
     return "\n".join(codigo_py) + "\n"
 
 def main():
-    parser = argparse.ArgumentParser(description="Tradutor LingCeara - Projeto 1 (.ce -> .py)")
+    parser = argparse.ArgumentParser(description="Tradutor Cearês - Projeto 1 (.ce -> .py)")
     parser.add_argument("arquivo", help="Arquivo fonte .ce")
     parser.add_argument("-o", "--saida", help="Arquivo de saída .py", default=None)
     parser.add_argument("-r", "--run", action="store_true", help="Executa o código após a tradução")
